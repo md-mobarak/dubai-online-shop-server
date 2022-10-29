@@ -33,7 +33,7 @@ function verifyJWT(req, res, next) {
 const uri = `mongodb+srv://${process.env.USER_DB}:${process.env.PASSWORD_DB}@cluster0.gx2cijq.mongodb.net/?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
-
+// https://dubai-online-shop.onrender.com
 async function run() {
     try {
         await client.connect();
